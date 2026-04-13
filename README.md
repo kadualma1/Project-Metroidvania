@@ -1,11 +1,3 @@
-# Guia de Trabalho em Equipe no Unity com GitHub
-
-Este documento define o fluxo oficial de trabalho do projeto em **Unity + GitHub**, com o objetivo de evitar conflitos, perda de referências, cenas quebradas, arquivos corrompidos e retrabalho desnecessário.
-
-A ideia é que todo membro do time siga este guia como padrão.
-
----
-
 # Objetivo
 
 Garantir que o desenvolvimento em equipe seja:
@@ -25,9 +17,7 @@ Este projeto utiliza:
 - **Unity**
 - **Git**
 - **GitHub**
-- **Git LFS** para arquivos pesados, quando necessário
-
-Não utilizaremos Unity Version Control / Plastic SCM neste projeto, salvo mudança futura de decisão da equipe.
+- **Git LFS** para arquivos pesados
 
 ---
 
@@ -35,24 +25,12 @@ Não utilizaremos Unity Version Control / Plastic SCM neste projeto, salvo mudan
 
 ## 1. Nunca apagar, mover ou renomear assets manualmente pelo Explorer/Finder
 
-Assets da Unity devem ser movidos, duplicados, renomeados e apagados **dentro do Unity Editor**, e não diretamente pelas pastas do sistema operacional.
+Assets da Unity devem ser movidos, duplicados, renomeados e apagados dentro do Unity Editor, e não diretamente pelas pastas do sistema operacional.
 
 Motivo:
 
 A Unity usa arquivos `.meta` para manter referências internas.  
 Se um asset for movido ou renomeado por fora de forma incorreta, referências podem quebrar.
-
-### Certo
-
-- mover asset pelo Project Window da Unity
-- renomear asset pela Unity
-- duplicar asset pela Unity
-
-### Errado
-
-- arrastar arquivos de uma pasta para outra pelo Explorer
-- renomear prefab, scene, material, sprite ou script por fora da Unity
-- apagar `.meta`
 
 ---
 
@@ -64,9 +42,10 @@ Antes de abrir o projeto, cada pessoa deve primeiro atualizar o repositório loc
 
 1. Abrir o GitHub Desktop
 2. Acessar a branch `main` antes de tudo
-3. Fazer `git pull`
-4. Verificar se houve conflito
-5. Só então abrir a Unity
+3. Dar um pull (ctrl+shift+p)
+4. Verificar se houve conflito e ajustar
+5. Criar a branch onde as alterações serão feitas
+6. Abrir a Unity
 
 Isso reduz muitos problemas de reimport, arquivos desatualizados e conflito em scene/prefab.
 
@@ -80,7 +59,7 @@ Toda tarefa deve ser feita em uma branch própria.
 
 A branch deve ter o id da tarefa, contido na planilha de Sprints.
 
-Pode ser formatado como id + "descrição curta da tarefa", mas o id sempre será obrigatório para evitar duplicatas.
+Pode ser formatado como id + "descrição-curta-da-tarefa", mas o id sempre será obrigatório para evitar duplicatas.
 
 ---
 
