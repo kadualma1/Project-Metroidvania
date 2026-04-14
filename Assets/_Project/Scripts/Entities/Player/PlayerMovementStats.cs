@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "MovementStats")]
 public class PlayerMovementStats : ScriptableObject
 {
     [Header("Horizontal Movement")]
@@ -15,5 +16,7 @@ public class PlayerMovementStats : ScriptableObject
     public float HeadDetectionLength = .02f;
     [Range(0, 1)] public float HeadWidth = .75f;
 
-
+    [Header("Debug")]
+    public bool DebugShowIsGrounded = true;
+    public bool DebugShowBumpedHead = true;
 }
