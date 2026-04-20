@@ -15,17 +15,17 @@ MonoBehaviour:
   MaxWalkSpeed: 7
   GroundAcceleration: 50
   GroundDeceleration: 50
-  AirAcceleration: 5
-  AirDeceleration: 5
+  AirAcceleration: 20
+  AirDeceleration: 25
   JumpHeight: 4
   JumpHeightCompensation: 1.054
   TimeToJumpApex: 0.35
-  GravityOnReleaseMultiplier: 2
-  MaxFallSpeed: 26
+  GravityOnReleaseMultiplier: 2.5
+  MaxFallSpeed: 18
   InitialNumberOfJumps: 1
   TimeForUpwardsCancel: 0.027
-  ApexThreshold: 0.97
-  ApexHangTime: 0.075
+  ApexThreshold: 0.9
+  ApexHangTime: 0.02
   JumpBufferTime: 0.125
   JumpCoyoteTime: 0.1
   GroundLayer:
